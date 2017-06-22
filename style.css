@@ -1,0 +1,124 @@
+/*!
+ * Theme Name:   C
+ * Template:     popper
+ * Description:  Child theme based on <a href="https://github.com/mor10/popper">Popper by @mor10</a>, with bits from <a href="https://github.com/beaulebens/Homeroom">Homeroom by @beaulebens</a>. Supports styling of tweets imported via <a href="https://wordpress.org/plugins/keyring-social-importers/">Keyring Social Importers plugin</a>.
+ * Author:       Caspar Hübinger
+ * Author URI:   https://glueckpress.com
+ * Version:      1.0.0
+ * License:      GNU General Public License v3
+ * License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+/*--------------------------------------------------------------
+# C styles
+--------------------------------------------------------------*/
+.site-title {
+	text-transform: none;
+}
+
+/* Animation for author’s site logo, does not necessarily fit everywhere. */
+.site-logo a {
+	background: white;
+	border: 4px solid white;
+	border-radius: 200%;
+	color: black;
+	-webkit-transition: border-radius .25s linear;
+	   -moz-transition: border-radius .25s linear;
+			transition: border-radius .25s linear;
+}
+
+.site-logo a:hover,
+.site-logo a:focus {
+	border-radius: 0;
+	outline: 2px solid white;
+}
+
+.site-logo a img {
+	-webkit-transition: transform .3s linear;
+	   -moz-transition: transform .3s linear;
+			transition: transform .3s linear;
+}
+
+.site-logo a:hover img,
+.site-logo a:focus img {
+	-webkit-transform: rotate(144deg);
+	   -moz-transform: rotate(144deg);
+	        transform: rotate(144deg);
+}
+
+/* Preserve margins when the rendered HTML source gets minified. */
+.paging-navigation li {
+	margin-right: .25em;
+}
+
+.paging-navigation li:last-of-type {
+	margin-right: 0;
+}
+
+/* Home line only for small menu */
+@media screen and (min-width: 50em) {
+
+	.main-navigation .menu-item-home {
+		display: none;
+	}
+
+}
+
+/*--------------------------------------------------------------
+# Aside/Twitter
+--------------------------------------------------------------*/
+.keyring_services-twitter {
+	padding-bottom: 0;
+}
+
+.format-aside .entry-content,
+.format-aside blockquote {
+	margin: 0 0 0.5em 0;
+}
+
+.format-aside .twitter-tweet {
+	-webkit-transition: opacity .5s linear;
+	   -moz-transition: opacity .5s linear;
+			transition: opacity .5s linear;
+}
+
+.js .format-aside .twitter-tweet:not(.twitter-tweet-rendered) {
+	opacity: 0;
+}
+
+.js .format-aside .twitter-tweet-rendered {
+	opacity: 1:
+}
+
+.format-aside .twitter-tweet-rendered {
+	margin: 0 auto 2em !important;
+}
+
+.format-aside blockquote p {
+	margin-bottom: 0.8em;
+}
+
+.twt-tweet .twt-media {
+	text-align: center !important;
+}
+
+.twt-tweet .twt-media img {
+	margin: 0 auto !important;
+}
+
+.post-tags {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post-tag {
+	display: inline;
+	margin-right: 0.3em;
+}
+
+.entry-meta .post-tags a,
+.post-tags a {
+	border: none;
+}
